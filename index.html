@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Forest Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <title>Shool info </title>
+</head>
+<body>
+    <header id="header">
+      
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>Информация для конференций</span><br>11-а класса</h2>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+        
+        <a href="#" id="btn">Далее</a>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>Рассписания звонков</h2>
+ 
+<p>1ур. 8.30-9.15;
+<p>2ур. 9.25-10.10;
+<p>3ур.10.20-11.05;
+<p>4ур. 11.15-12.00;
+<p>5ур.12.10-12.55;
+<p>6ур.13.05-13.50;
+<p>7ур. 14.00-14.45;
+<p>8ур.14.55-15.40
+<br><br>
+
+<br><br>
+    <h2>Коды для урока</h2>
+
+<p>Фізика та Астрономія.
+<p>https://us04web.zoom.us/j/5450648278?<p>pwd=YkNORElFaU1rY0tMMGl4YUI4NzFtdz09
+<br><br>
+<p>Біологія та Географія.
+<p>https://us05web.zoom.us/j/3341647301?<p>pwd=cE9paGJHd0pwVVVNbXQ4RWdlUDNyUT09
+<br><br>
+<p>Хімія.
+<p>ID: 221 776 8745.
+<p>Пароль: chem25
+<br><br>
+<p>Алгебра та Геометрія.
+<p>ID: 747 1099 6015
+<p>Пароль: 123
+<br><br>
+<p>Захист України.
+<p>ID: 528 936 4728
+<p>Пароль: 1Te1Jz
+<br><br>
+<p>Зарубіжна література.
+<p>https://us04web.zoom.us/j/7558201750?<p>pwd=DacT9nZsvP0x8eg8BmeSZl6hfdyfCJ.1
+
+<p>Технології.
+<p>https://us05web.zoom.us/j/8902177880?<p>pwd=dmJXVUVHS2JWT1lwQWhsaUVib0Zudz09
+<br><br>
+<p>Українська мова та література.
+<p>ID: 288 289 0238
+<p>Код: 8888
+<br><br>
+<p>Історія України та Всемирна.
+<p>ID: 595 565 5080
+<p>Код: 007
+<br><br>
+<p>Фізична культура.
+<p>https://us05web.zoom.us/j/5093418134?<p>pwd=RndhRmhsMGc4aExCOUxXd0VGcWpZUT09
+<br><br>
+<p>Англійська мова.
+<p>1-ша група Гандзя
+<p>https://us05web.zoom.us/j/82283322010?<p>pwd=ZmtDT2gwdUZCSnMyOTVBVVJMSldBQT09
+<p>2-га група посилання приходять у Viber перед кожним уроком.
+<br><br>
+<h2>Почты учителей</h2>
+<p>Укр: PETDF2510@gmail.com
+    <br><br>
+<p>Математика: anhelika2375@gmail.com
+    <br><br>
+<p>История: okzavizion@ukr.net
+    <br><br>
+<p>Химия: ryatchemulanova2020@gmail.com
+    <br><br>
+<p>Биология: yatsenko-1967@ukr.net
+    <br><br>
+<p>Зарубежка: oo3638025@gmail.com
+    <br><br>
+<p>Технология: ryattehnolog@gmail.com
+    <br><br>
+<p>Захист: v42869@ukr.net
+    <br><br>
+<p>Физра: vgoliusov1971@gmail.com
+    <br><br>
+<p>Англ(Гандзя): ryatenggandzya@gmail.com
+    <br><br>
+<p>Физика: ryatfizzemntska@gmail.com
+    <br><br>
+    </div>
+    
+
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
